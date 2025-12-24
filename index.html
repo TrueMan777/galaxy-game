@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="ui">
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="health">Health: <span id="health">3</span></div>
+            <div class="level">Level: <span id="level">1</span></div>
+            <div class="enemies">Progress: <span id="enemies">0/5</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="instructions">
+            <p>Use WASD or Arrow Keys to move your spaceship</p>
+            <p>Press SPACE to shoot bullets and destroy asteroids and enemies!</p>
+            <p>Press U to open the UPGRADE SHOP and spend points on improvements!</p>
+            <p>Press S to activate shield (if purchased) for temporary invincibility!</p>
+            <p>Defeat enemies to progress through levels - every 3rd level is a BOSS!</p>
+            <p>Bosses have unique attack patterns and massive health bars!</p>
+            <p>If you die, you restart from the current level (not from level 1)!</p>
+            <p>Avoid asteroids, enemy ships, and enemy bullets!</p>
+            <p>Press SPACE to restart level / R for complete reset</p>
+            <p>Press M to toggle sound effects</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>

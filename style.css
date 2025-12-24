@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000011;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    text-align: center;
+    position: relative;
+}
+
+.ui {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px 10px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 2px solid #333;
+    background: linear-gradient(45deg, #000011, #001122);
+    display: block;
+}
+
+.instructions {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 0 0 10px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.instructions p {
+    margin: 5px 0;
+}
+
+.score {
+    color: #00ff88;
+}
+
+.health {
+    color: #ff4444;
+}
+
+.level {
+    color: #ffaa00;
+}
+
+.enemies {
+    color: #88aaff;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+.pulse {
+    animation: pulse 0.5s ease-in-out;
+}
